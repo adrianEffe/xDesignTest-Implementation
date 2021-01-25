@@ -1,0 +1,82 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name MunroLibrary
+import Foundation
+import Swift
+@_hasMissingDesignatedInitializers public class CSVHelper {
+  public class func getData(from CSVfile: Swift.String, in bundle: Foundation.Bundle = .main) throws -> Swift.String
+  public class func parseCSVData(from data: Swift.String) -> [MunroLibrary.Munro]
+  public class func removeUnecessaryRows(from rows: [Swift.String]) throws -> [Swift.String]
+  public class func createMunroObject(from rows: [Swift.String]) throws -> [MunroLibrary.Munro]
+  @objc deinit
+}
+public enum CSVHandlingError : Swift.Error {
+  case invalidFilepath
+  case invalidStringConversion
+  case csvNotConforming
+  case metersHeightValueNotaNumber
+  public static func == (a: MunroLibrary.CSVHandlingError, b: MunroLibrary.CSVHandlingError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public enum SortingError : Swift.Error {
+  case minimumHeightThreshold
+  case maximumHeightThreshold
+  case invalidSelection
+  public static func == (a: MunroLibrary.SortingError, b: MunroLibrary.SortingError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension CSVHandlingError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension SortingError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public struct Munro {
+  public enum MunroType : Swift.String {
+    case TOP
+    case MUN
+    case EITHER
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+public enum ValueToSortBy {
+  case name
+  case height
+  public static func == (a: MunroLibrary.ValueToSortBy, b: MunroLibrary.ValueToSortBy) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public enum SortBy {
+  case ascending
+  case descending
+  public static func == (a: MunroLibrary.SortBy, b: MunroLibrary.SortBy) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension Array where Element == MunroLibrary.Munro {
+  public func searchByHillCategory(by munroType: MunroLibrary.Munro.MunroType? = .none) -> [MunroLibrary.Munro]
+  public func orderByHeight(by type: MunroLibrary.SortBy) -> [MunroLibrary.Munro]
+  public func orderAlphabetically(by type: MunroLibrary.SortBy) -> [MunroLibrary.Munro]
+  public func returnLimitedElements(of results: Swift.Int) -> [MunroLibrary.Munro]
+  public func minimumHeight(meters: Swift.Float) throws -> [MunroLibrary.Munro]
+  public func maximumHeight(meters: Swift.Float) throws -> [MunroLibrary.Munro]
+  public func combineSortCriteria(by value1: MunroLibrary.ValueToSortBy, and value2: MunroLibrary.ValueToSortBy) throws -> [MunroLibrary.Munro]
+}

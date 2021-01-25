@@ -14,6 +14,15 @@
 		605015AA25BEC9A500CDD565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 605015A925BEC9A500CDD565 /* Assets.xcassets */; };
 		605015AD25BEC9A500CDD565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 605015AB25BEC9A500CDD565 /* LaunchScreen.storyboard */; };
 		605015B625BEC9BC00CDD565 /* munrotab_v6.2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 605015B525BEC9BC00CDD565 /* munrotab_v6.2.csv */; };
+		60C7CD4F25BF373100E9E3AB /* libMunroLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C7CD4425BF373100E9E3AB /* libMunroLibrary.a */; };
+		60C7CD5025BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftinterface in Resources */ = {isa = PBXBuildFile; fileRef = 60C7CD4625BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftinterface */; };
+		60C7CD5125BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftdoc in Resources */ = {isa = PBXBuildFile; fileRef = 60C7CD4725BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftdoc */; };
+		60C7CD5225BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftmodule in Resources */ = {isa = PBXBuildFile; fileRef = 60C7CD4825BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftmodule */; };
+		60C7CD5325BF373100E9E3AB /* x86_64.swiftdoc in Resources */ = {isa = PBXBuildFile; fileRef = 60C7CD4925BF373100E9E3AB /* x86_64.swiftdoc */; };
+		60C7CD5425BF373100E9E3AB /* x86_64.swiftmodule in Resources */ = {isa = PBXBuildFile; fileRef = 60C7CD4A25BF373100E9E3AB /* x86_64.swiftmodule */; };
+		60C7CD5525BF373100E9E3AB /* x86_64.swiftsourceinfo in Resources */ = {isa = PBXBuildFile; fileRef = 60C7CD4C25BF373100E9E3AB /* x86_64.swiftsourceinfo */; };
+		60C7CD5625BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftsourceinfo in Resources */ = {isa = PBXBuildFile; fileRef = 60C7CD4D25BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftsourceinfo */; };
+		60C7CD5725BF373100E9E3AB /* x86_64.swiftinterface in Resources */ = {isa = PBXBuildFile; fileRef = 60C7CD4E25BF373100E9E3AB /* x86_64.swiftinterface */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +35,15 @@
 		605015AC25BEC9A500CDD565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		605015AE25BEC9A500CDD565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		605015B525BEC9BC00CDD565 /* munrotab_v6.2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = munrotab_v6.2.csv; sourceTree = "<group>"; };
+		60C7CD4425BF373100E9E3AB /* libMunroLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMunroLibrary.a; sourceTree = "<group>"; };
+		60C7CD4625BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftinterface */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "x86_64-apple-ios-simulator.swiftinterface"; sourceTree = "<group>"; };
+		60C7CD4725BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "x86_64-apple-ios-simulator.swiftdoc"; sourceTree = "<group>"; };
+		60C7CD4825BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = "x86_64-apple-ios-simulator.swiftmodule"; sourceTree = "<group>"; };
+		60C7CD4925BF373100E9E3AB /* x86_64.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = x86_64.swiftdoc; sourceTree = "<group>"; };
+		60C7CD4A25BF373100E9E3AB /* x86_64.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = x86_64.swiftmodule; sourceTree = "<group>"; };
+		60C7CD4C25BF373100E9E3AB /* x86_64.swiftsourceinfo */ = {isa = PBXFileReference; lastKnownFileType = file; path = x86_64.swiftsourceinfo; sourceTree = "<group>"; };
+		60C7CD4D25BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftsourceinfo */ = {isa = PBXFileReference; lastKnownFileType = file; path = "x86_64-apple-ios-simulator.swiftsourceinfo"; sourceTree = "<group>"; };
+		60C7CD4E25BF373100E9E3AB /* x86_64.swiftinterface */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = x86_64.swiftinterface; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60C7CD4F25BF373100E9E3AB /* libMunroLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 				605015A025BEC9A100CDD565 /* AppDelegate.swift */,
 				605015A225BEC9A100CDD565 /* SceneDelegate.swift */,
 				605015A425BEC9A100CDD565 /* ViewController.swift */,
+				60C7CD4325BF373100E9E3AB /* lib */,
 				605015B825BEC9C600CDD565 /* CSV File */,
 				605015A625BEC9A100CDD565 /* Main.storyboard */,
 				605015A925BEC9A500CDD565 /* Assets.xcassets */,
@@ -76,6 +96,38 @@
 				605015B525BEC9BC00CDD565 /* munrotab_v6.2.csv */,
 			);
 			path = "CSV File";
+			sourceTree = "<group>";
+		};
+		60C7CD4325BF373100E9E3AB /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				60C7CD4425BF373100E9E3AB /* libMunroLibrary.a */,
+				60C7CD4525BF373100E9E3AB /* MunroLibrary.swiftmodule */,
+			);
+			path = lib;
+			sourceTree = SOURCE_ROOT;
+		};
+		60C7CD4525BF373100E9E3AB /* MunroLibrary.swiftmodule */ = {
+			isa = PBXGroup;
+			children = (
+				60C7CD4625BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftinterface */,
+				60C7CD4725BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftdoc */,
+				60C7CD4825BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftmodule */,
+				60C7CD4925BF373100E9E3AB /* x86_64.swiftdoc */,
+				60C7CD4A25BF373100E9E3AB /* x86_64.swiftmodule */,
+				60C7CD4B25BF373100E9E3AB /* Project */,
+				60C7CD4E25BF373100E9E3AB /* x86_64.swiftinterface */,
+			);
+			path = MunroLibrary.swiftmodule;
+			sourceTree = "<group>";
+		};
+		60C7CD4B25BF373100E9E3AB /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				60C7CD4C25BF373100E9E3AB /* x86_64.swiftsourceinfo */,
+				60C7CD4D25BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftsourceinfo */,
+			);
+			path = Project;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,10 +187,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60C7CD5025BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftinterface in Resources */,
+				60C7CD5225BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftmodule in Resources */,
 				605015AD25BEC9A500CDD565 /* LaunchScreen.storyboard in Resources */,
 				605015AA25BEC9A500CDD565 /* Assets.xcassets in Resources */,
+				60C7CD5725BF373100E9E3AB /* x86_64.swiftinterface in Resources */,
+				60C7CD5125BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftdoc in Resources */,
 				605015B625BEC9BC00CDD565 /* munrotab_v6.2.csv in Resources */,
 				605015A825BEC9A100CDD565 /* Main.storyboard in Resources */,
+				60C7CD5325BF373100E9E3AB /* x86_64.swiftdoc in Resources */,
+				60C7CD5425BF373100E9E3AB /* x86_64.swiftmodule in Resources */,
+				60C7CD5525BF373100E9E3AB /* x86_64.swiftsourceinfo in Resources */,
+				60C7CD5625BF373100E9E3AB /* x86_64-apple-ios-simulator.swiftsourceinfo in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
